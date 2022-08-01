@@ -1,0 +1,54 @@
+section {
+  table {
+    position: relative;
+    top: 128px;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 80vw;
+    font-size: 1rem;
+    align-self: center;
+    thead tr {
+      background-color: #e6e6e6;
+      color: var(--text);
+      text-align: left;
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      padding: 14px 20px;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    td:last-child {
+      text-align: left;
+    }
+
+    .hoverTr {
+      background: var(--white);
+    }
+
+    .hoverTr:hover {
+      background: cadetblue;
+      color: #fff;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #dddddd;
+    }
+
+    i.edit {
+      color: blue;
+    }
+
+    i.delete {
+      color: red;
+      margin-left: 20px;
+    }
+  }
+}
