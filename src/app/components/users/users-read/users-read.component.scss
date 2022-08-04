@@ -1,4 +1,9 @@
 section {
+  margin: 0 auto;
+  overflow: auto;
+  height: 100vh;
+  width: calc(100vw - 200px);
+  background: #e0e4e2;
   table {
     position: relative;
     top: 128px;
@@ -8,9 +13,10 @@ section {
     border-radius: 10px;
     margin: 0 auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    width: 80vw;
+    width: 70vw;
     font-size: 1rem;
     align-self: center;
+    background: #ffffff;
     thead tr {
       background-color: #e6e6e6;
       color: var(--text);
@@ -23,10 +29,15 @@ section {
       padding: 14px 20px;
       cursor: pointer;
       text-align: left;
+
+      img {
+        width: 20px;
+      }
     }
 
     td:last-child {
       text-align: left;
+      width: 70px;
     }
 
     .hoverTr {
@@ -34,12 +45,11 @@ section {
     }
 
     .hoverTr:hover {
-      background: cadetblue;
-      color: #fff;
+      background: #bcebd5;
     }
 
     tbody tr {
-      border-bottom: 1px solid #dddddd;
+      // border-bottom: 1px solid #d1cece;
     }
 
     i.edit {

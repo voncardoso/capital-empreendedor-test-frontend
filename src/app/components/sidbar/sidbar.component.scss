@@ -1,13 +1,20 @@
 section {
-  max-width: 200px;
-  width: 100%;
-  background: #3aab34;
-  height: 100vh;
-  color: #fff;
-  h1 {
-    font-size: 1.125rem;
-    text-align: center;
-    padding: 20px;
-    letter-spacing: 0.5;
+  display: flex;
+  strong {
+    max-width: 200px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    height: 100vh;
+    img {
+      font-size: 1.125rem;
+      text-align: center;
+      padding: 20px;
+      letter-spacing: 0.5;
+    }
   }
+}
+.div {
+  background: red;
+  width: 100vw;
 }

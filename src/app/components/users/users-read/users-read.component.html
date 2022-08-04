@@ -10,115 +10,14 @@
       </tr>
     </thead>
     <tbody>
-      <tr class="hoverTr">
-        <td>carro</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>teste</td>
+      <tr class="hoverTr" *ngFor="let users of users">
+        <td>{{ users.name }}</td>
+        <td>{{ users.email }}</td>
+        <td>{{ users.phone }}</td>
+        <td>{{ users.revenue | currency: "BRL" }}</td>
         <td>
-          <a routerLink="">
-            <i class="edit">edit </i>
-          </a>
-          <a routerLink="">
-            <i class="delete">delete</i>
-          </a>
-        </td>
-      </tr>
-      <tr class="hoverTr">
-        <td>carro</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>
-          <a routerLink="">
-            <i class="edit">edit </i>
-          </a>
-          <a routerLink="">
-            <i class="delete">delete</i>
-          </a>
-        </td>
-      </tr>
-      <tr class="hoverTr">
-        <td>carro</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>
-          <a routerLink="">
-            <i class="edit">edit </i>
-          </a>
-          <a routerLink="">
-            <i class="delete">delete</i>
-          </a>
-        </td>
-      </tr>
-      <tr class="hoverTr">
-        <td>carro</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>
-          <a routerLink="">
-            <i class="edit">edit </i>
-          </a>
-          <a routerLink="">
-            <i class="delete">delete</i>
-          </a>
-        </td>
-      </tr>
-      <tr class="hoverTr">
-        <td>carro</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>
-          <a routerLink="">
-            <i class="edit">edit </i>
-          </a>
-          <a routerLink="">
-            <i class="delete">delete</i>
-          </a>
-        </td>
-      </tr>
-      <tr class="hoverTr">
-        <td>carro</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>
-          <a routerLink="">
-            <i class="edit">edit </i>
-          </a>
-          <a routerLink="">
-            <i class="delete">delete</i>
-          </a>
-        </td>
-      </tr>
-      <tr class="hoverTr">
-        <td>carro</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>
-          <a routerLink="">
-            <i class="edit">edit </i>
-          </a>
-          <a routerLink="">
-            <i class="delete">delete</i>
-          </a>
-        </td>
-      </tr>
-      <tr class="hoverTr">
-        <td>carro</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>teste</td>
-        <td>
-          <a routerLink="">
-            <i class="edit">edit </i>
-          </a>
-          <a routerLink="">
-            <i class="delete">delete</i>
+          <a routerLink="/users/{{ users.id }}">
+            <img src="../../../../assets/caret-right.svg" alt="" />
           </a>
         </td>
       </tr>

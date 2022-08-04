@@ -1,0 +1,42 @@
+section {
+  margin: 0 auto;
+  overflow: auto;
+  height: 100vh;
+  width: calc(100vw - 200px);
+  background: #e0e4e2;
+  h1 {
+    font-size: 1.375rem;
+    margin: 0 auto;
+    width: 80vw;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  h1:first-child {
+    margin-top: 128px;
+  }
+
+  div {
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    ul {
+      padding: 20px;
+      li {
+        list-style: none;
+        display: flex;
+        padding: 10px 0px;
+        font-weight: bold;
+
+        p {
+          margin-left: 10px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .oportunidade {
+    margin-top: 20px;
+  }
+}

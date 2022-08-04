@@ -1,0 +1,33 @@
+<section>
+  <h1>Dados do Cliente</h1>
+  <div>
+    <ul>
+      <li>
+        Nome:
+        <p>{{ users.name }}</p>
+      </li>
+      <li>
+        E-mail:
+        <p>{{ users.email }}</p>
+      </li>
+      <li>
+        Telefone:
+        <p>{{ users.phone }}</p>
+      </li>
+      <li>
+        Receita:
+        <p>{{ users.revenue | currency: "BRL" }}</p>
+      </li>
+      <li>
+        Oportunidade:
+        <p *ngIf="users.isActive == true">Ativo</p>
+        <p *ngIf="users.isActive == false">Indisponivel no momento</p>
+      </li>
+      <li>
+        Termos Acordados:
+        <p *ngIf="users.agreedTerms == true">Aceito</p>
+        <p *ngIf="users.agreedTerms == false">Não aceito</p>
+      </li>
+    </ul>
+  </div>
+</section>
